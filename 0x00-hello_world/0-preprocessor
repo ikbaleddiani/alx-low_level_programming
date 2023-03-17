@@ -1,2 +1,2 @@
 #!/bin/bash
-ecport CFILE= "0-preprocessor.c" ; ./0-preprocessor.c
+ecport CFILE=0-preprocessor.c ; ./0-preprocessor.c
