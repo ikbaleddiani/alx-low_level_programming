@@ -1,19 +1,8 @@
-#include "main.h"
-/**
- *main - Entry point
- *
- *Description: Using _putchar
- *
- *Return: Always 0 (Success)
- */
-int main(void)
+#include <stdio.h>
+
+int main()
 {
-	char word[9] = "_putchar";
-	int i;
+    printf("_putchar\n");
 
-	for (i = 0; i < 8; i++)
-		_putchar(word[i]);
-	_putchar('\n');
-
-	return (0);
+    return 0;
 }
