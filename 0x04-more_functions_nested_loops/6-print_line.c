@@ -11,7 +11,7 @@ int i = 0;
 
 if (n > i)
 {
-for (; i < n; i++)
+for ( i < n; i++)
 	_putchar('_');
 }
 	_putchar('\n');
