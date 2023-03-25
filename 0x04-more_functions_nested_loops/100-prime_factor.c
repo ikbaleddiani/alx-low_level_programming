@@ -48,6 +48,5 @@ int main(void)
 	largest_prime(612852475143);
 	printf("\n");
 
-	return (0)
-
+	return (0);
 }	
