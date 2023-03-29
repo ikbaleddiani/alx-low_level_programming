@@ -2,15 +2,18 @@
 #include <stdio.h>
 
 /**
- * swap_int - swaps the values of two integers
- *@a: first integer
- *@b: last integer
+ * _strlen - returns the length of a string
+ *@s: type char
  * Return: Always 0.
  */
-void swap_int(int *a, int *b)
+int _strlen(char *s)
 {
-int za;
-za = *a;
-*a = *b;
-*b = za;
+{
+int i = 0;
+while (s[i] != '\0')
+{
+i++;
+}
+return (i);
+}
 }
