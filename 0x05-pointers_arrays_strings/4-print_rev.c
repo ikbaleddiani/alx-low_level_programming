@@ -14,8 +14,8 @@ n++;
 i = n - 1;
 while (i >= 0)
 {
-_putchar(s[i]);
+putchar(s[i]);
 i--;
 }
-_putchar('\n');
+putchar('\n');
 }
