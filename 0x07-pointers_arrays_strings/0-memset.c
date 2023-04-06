@@ -3,7 +3,7 @@
  * _memset - fill is assemble of  memory with a constant value
  * @s: stared an adraess of memory to be filled 
  * @b: the required value 
- * @s: number of bytes need to change
+ * @n: number of bytes need to change
  *
  * Return: A pointer to the filled memory area @s
  */
