@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _memset - fill is assemble of  memory with a constant value
- * @s: stared an adraess of memory to be filled 
+ * @s: stared an adress of memory to be filled 
  * @b: the required value 
  * @n: number of bytes need to change
  *
