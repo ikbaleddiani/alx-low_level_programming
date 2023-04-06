@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * The _memset -  fill is assemble of  memory with a constant value
+ * _memset - fill is assemble of  memory with a constant value
  * @s: stared an adraess of memory to be filled 
  * @b: required the value 
  * @s: bytes number need to change
  *
- * Returns a pointer to the memory area @s 
+ * Return :change array with new value for n bytes.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
