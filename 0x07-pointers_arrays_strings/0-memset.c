@@ -2,10 +2,10 @@
 /**
  * _memset - fill is assemble of  memory with a constant value
  * @s: stared an adraess of memory to be filled 
- * @b: required the value 
- * @s: bytes number need to change
+ * @b: the required value 
+ * @s: number of bytes need to change
  *
- * Return :change array with new value for n bytes.
+ * Return: change array with new value for n bytes.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
