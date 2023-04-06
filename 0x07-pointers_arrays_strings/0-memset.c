@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * The _memset fills memory with a constant byte
+ * The _memset -  fill is assemble of  memory with a constant value
  * @s: stared an adraess of memory to be filled 
- * @b: the value 
- * @s: bytes number 
+ * @b: required the value 
+ * @s: bytes number need to change
  *
  * Returns a pointer to the memory area @s 
  */
