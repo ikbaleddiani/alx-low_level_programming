@@ -5,7 +5,7 @@
  * @s: pointer to string.
  * @c: character that locate to string.
  *
- * Return: pointer to the first occurrence.
+ * Return: pointer to the first occurrence
  */
 
 char *_strchr(char *s, char c)
