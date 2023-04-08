@@ -6,7 +6,7 @@
  * @src: memory area
  * @n: bytes from memory area 
  *
- * Restun: Returns a pointer to @dest
+ * Restun: Returns a pointer to 0
  */
 char *_memcpy(char *dest, char *src, unsigned int n);
 {
