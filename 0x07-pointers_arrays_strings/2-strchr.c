@@ -2,22 +2,24 @@
 
  /**
  * _strchr - a function that locates a character in string
- * @s: string.
- * @c: character in the  string.
+ * @s: string
+ * @c: character in the  string
  *
  * Return: pointer to the first occurrence
  */
 
 char *_strchr(char *s, char c)
 {
-
-	while (s[0] != '\0')
+	while (*s != '\0')
 	{
-		if (s[0] == c)
+		if (*s == c)
 			return (s);
-		else if (s[1] == c)
-			return (s + 1);
 		s++;
 	}
-	return (s + 1);
+	
+	if (*s == c)
+		return (s);
+	
+	return ('\0');
+
 }
