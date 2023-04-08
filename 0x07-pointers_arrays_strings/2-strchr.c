@@ -5,7 +5,7 @@
  * @s: string
  * @c: character in the  string
  *
- * Return: pointer to the first occurrence
+ * Return: first occurence of the charatcer or null if not found
  */
 
 char *_strchr(char *s, char c)
@@ -16,10 +16,8 @@ char *_strchr(char *s, char c)
 			return (s);
 		s++;
 	}
-	
 	if (*s == c)
-		return (s);
-	
+		return (s);	
 	return ('\0');
 
 }
