@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strspn - function that gets the length of a prexif substring
+ * _strspn -function that gets the length of a prexif substring
  *
  * @s: pointer to string
  * @accept: pointer to string 
