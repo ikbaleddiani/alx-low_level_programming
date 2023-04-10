@@ -3,7 +3,7 @@
  * _strspn -function that gets the length of a prexif substring
  *
  * @s: pointer to string
- * @accept: pointer to string 
+ * @accept: pointer to string
  *
  * Return: the number of bytes in the initial segment.
  */
