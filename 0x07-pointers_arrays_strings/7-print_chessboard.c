@@ -4,10 +4,11 @@
  * print_chessboard - prints the chessboard
  * @a: array
  */
-
 void print_chessboard(char (*a)[8])
 {
 	int n, j;
+
+
 
 	n = 0;
 
@@ -20,6 +21,7 @@ void print_chessboard(char (*a)[8])
 		while (j < 8)
 
 		{
+
 			_putchar (a[n][j]);
 
 			j++;
