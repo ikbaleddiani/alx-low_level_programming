@@ -7,13 +7,13 @@
  * Return: 1 if n is a prime number. 0 if n is not a prime number
  */
 
-int prime(int n, int nc)
+int is_prime(int n, int nc)
 {
 	if (nc == 1)
 		return (1);
 	if (n % nc == 0 && nc > 0)
 		return (0);
-	return (prime(n, nc - 1));
+	return (is_prime(n, nc - 1));
 }
 
 /**
