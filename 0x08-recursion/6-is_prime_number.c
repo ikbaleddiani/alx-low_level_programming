@@ -3,17 +3,17 @@
 /**
  * is_prime - detects if an input number is prime number
  * @n: input number
- * @c: iterator
+ * @nc: iterator
  * Return: 1 if n is a prime number. 0 if n is not a prime number
  */
 
-int is_prime(int n, int c)
+int prime(int n, int nc)
 {
-	if (c == 1)
+	if (nc == 1)
 		return (1);
-	if (n % c == 0 && c > 0)
+	if (n % nc == 0 && nc > 0)
 		return (0);
-	return (is_prime(n, c - 1));
+	return (prime(n, nc - 1));
 }
 
 /**
