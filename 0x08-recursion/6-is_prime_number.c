@@ -13,7 +13,7 @@ int is_prime(int n, int nc)
 		return (1);
 	if (n % nc == 0 && nc > 0)
 		return (0);
-	return (is_prime(n, nc - 1));
+	return (prime(n, nc - 1));
 }
 
 /**
