@@ -7,7 +7,7 @@
  * @s1: string
  * @s2: other string
  *
- * Rsturn: to the new stringif it passed , if it not to NULL.
+ * Rsturn: * Return: concatenation of "s1" and "s2".
  */
 
 char *str_concat(char *s1, char *s2)
