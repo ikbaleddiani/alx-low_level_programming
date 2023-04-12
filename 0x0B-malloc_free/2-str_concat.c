@@ -34,7 +34,7 @@ char *ptr, ret;
 	if (!ret)
 		return (NULL);
 
-	ptr = ret;
+	*ptr = ret;
 	while (*s1)
 		*ptr++ = *s1++;
 	while (*s2)
