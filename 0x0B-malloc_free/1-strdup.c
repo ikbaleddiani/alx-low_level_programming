@@ -30,4 +30,4 @@ while (a < i)
 	a++;
 }
 s[a] = '\0';
-return (str);
+return (0);
