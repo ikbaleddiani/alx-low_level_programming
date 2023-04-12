@@ -40,6 +40,7 @@ char *ptr, ret;
 	while (*s2)
 		*ptr++ = *s2++;
 	*ptr = 0;
-
-	return *ptr;
+	{
+	return ret;
+	}
 }
