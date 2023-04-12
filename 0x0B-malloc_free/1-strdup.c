@@ -30,4 +30,5 @@ while (a < i)
 	a++;
 }
 s[a] = '\0';
-return (0);
+return (s);
+}
