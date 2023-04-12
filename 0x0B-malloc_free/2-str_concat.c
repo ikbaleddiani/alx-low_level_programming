@@ -18,6 +18,8 @@ char *ptr, ret;
 size = 0;
 ptr = s1;
 ptr = s2;
+ptr = ret;
+
 if (s1 != NULL && s2 != NULL)
     {
         while (*ptr++)
@@ -31,7 +33,7 @@ else
 
 ret = malloc(size + 1);
 if (ret == NULL)
-return NULL;
+return (NULL);
 
 ptr = ret;
     while (*s1)
