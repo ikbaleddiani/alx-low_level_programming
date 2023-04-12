@@ -30,7 +30,7 @@ char *ptr, ret;
 	else
 		s2 = "";
 
-	ret = malloc(size + 1);
+	ret = (size + 1);
 	if (!ret)
 		return (NULL);
 
