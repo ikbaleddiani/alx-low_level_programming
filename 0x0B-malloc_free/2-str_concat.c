@@ -41,5 +41,5 @@ char *ptr, ret;
 		*ptr++ = *s2++;
 	*ptr = 0;
 
-	return (*ret);
+	return ret;
 }
