@@ -5,7 +5,6 @@
  * @n: number of bytes of s2
  * Return: pointer to a newly allocated space in memory
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j, len_s1, len_s2;
@@ -42,3 +41,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	p[i++] = '\0';
 	return (p);
 }
+
