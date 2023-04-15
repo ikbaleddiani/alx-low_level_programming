@@ -5,15 +5,14 @@
  * @argc: vriable type intiger
  * @argv: variable type char
  *
- * Return: return 0 when success.
+ * Return: return 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i;
-for (i = 0; i < argc; i++)
-{
-	printf("%s\n", argv[i]);
-}
+	int loop;
+
+	for (loop = 0; loop < argc; loop++)
+		printf("%s\n", argv[loop]);
 	return (0);
 }
