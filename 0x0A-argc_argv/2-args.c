@@ -4,7 +4,6 @@
  * 
  * @argc: vriable type intiger
  * @argv: variable type char
- *
  * Return: return 0 when success.
  */
 
