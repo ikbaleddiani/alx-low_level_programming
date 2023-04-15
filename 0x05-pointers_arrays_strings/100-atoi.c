@@ -8,7 +8,7 @@
  * Return: to the int
  */
 
-int main(void)
+int _atoi(char *s)
 {
 	int sign = 1, i = 0;
 	unsigned int res = 0;
