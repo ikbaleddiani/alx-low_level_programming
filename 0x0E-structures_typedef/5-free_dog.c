@@ -2,7 +2,7 @@
 #include "dog.h"
 
 /**
- * free_dog -  a function that frees dogs.
+ * free_dog - a function that frees dogs.
  * @d: pointer to a dog structure.
  */
 
