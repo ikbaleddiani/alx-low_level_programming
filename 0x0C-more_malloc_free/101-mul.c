@@ -111,7 +111,6 @@ char *n2 = argv[2]
 
   if (argc != 3)
     error();
-
   check_number(n1);
   check_number(n2);
 
