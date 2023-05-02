@@ -3,7 +3,7 @@
 /**
  * print_listunt - a function that prints all the elements
  *  of a listint_t list.
- *  @h: ther pointer
+ *  @h: the pointer
  *
  *  Return: size of list
  */
@@ -18,5 +18,6 @@ size_t print_listint(const listint_t *h);
                 h = h->next;
                 i++;
         }
+
         return (i);
 }
