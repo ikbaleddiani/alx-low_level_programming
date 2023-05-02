@@ -8,7 +8,7 @@
  *  of a listint_t list.
  *  @h: ther pointer
  *
- *  Return: size_t
+ *  Return: size of list
  */
 
 size_t print_listint(const listint_t *h);
