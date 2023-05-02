@@ -3,13 +3,11 @@
 #include <stdlib.h>
 
 /**
- * print_listint - a function that prints all the elements
- * of a listint_t list.
- * @h: the header
+ * print_listint - function that prints all the elements of a listint_t list
+ * @h: header of listint_t list
  *
- * Return: num of node
+ * Return: number of nodes
  */
-
 size_t print_listint(const listint_t *h)
 {
 	int num;
