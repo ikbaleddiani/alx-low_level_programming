@@ -11,7 +11,7 @@
  * Return: to 0 if the list empty
  */
 
- int sum_listint(listint_t *head)
+int sum_listint(listint_t *head)
 {
 	unsigned int sum;
 	listint_t *p;
