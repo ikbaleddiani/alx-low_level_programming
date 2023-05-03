@@ -2,10 +2,10 @@
 
 /**
  * listint_len -  a function that returns the number of elements
- *  in a linked listint_t list.
- *  @h: pointer to first node
+ * in a linked listint_t list.
+ * @h: pointer to first node
  *
- *  Retuen: size of list
+ * Return: size of list
  */
 
 size_t listint_len(const listint_t *h)
