@@ -4,20 +4,31 @@
 #include "lists.h"
 
 /**
- * pop_listint - a function that returns the nth node of a listint_t linked list.
- * @head: pointer
- * @index: index
+ * get_nodeint_at_index - function that returns the nth node of a listint_t
+ * @head: a pointer
+ * @index: index of node
  *
- * Return: pointer
+ * Return: to index otherwise NULL if it does not exist
  */
 
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-        {
-    while (head != NULL && index > 0)
-    {
-        head = head->next;
-        index--;
-    }
-    return head;
-}	
+	unsigned int x;
+	listint_t *y;
+
+	if (head == NULL)
+		return (NULL);
+
+	if (!index)
+		return (head);
+	y = head;
+	x = 0;
+	while (y->next != NULL)
+	{
+		y = y->next;
+		x++;
+		if (x == index)
+			return (y);
+	}
+	return (NULL);
+}
