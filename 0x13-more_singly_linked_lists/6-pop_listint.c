@@ -5,12 +5,12 @@
 
 /**
  * pop_listint - a function that frees a listint_t list.
- * @*head: pointer
+ * @head: pointer
  *
  * Return: to popped value
  */
 
-int pop_listint(listint_t **head);
+int pop_listint(listint_t **head)
 {
         listint_t *node;
 	int n;
