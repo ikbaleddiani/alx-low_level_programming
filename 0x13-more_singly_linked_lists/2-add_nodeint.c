@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * *add_nodeint - function that adds a new node at the beginning
+ * add_nodeint - function that adds a new node at the beginning
  * of a listint_t list.
- * @*head: a pointer
+ * @head: a pointer
  * @n: new valeur
  *
  * Return: to the pointer
