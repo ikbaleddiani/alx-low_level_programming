@@ -13,21 +13,21 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int i;
+	int file;
 	ssize_t n_read, n_written;
 	char *text;
 
 	if (filename == NULL)
 		return (0);
 
-	i = open(filename, O_RDONLY);
-	if (i  == -1)
+	file = open(filename, O_RDONLY);
+	if (file  == -1)
 		return (0);
 
 	text = malloc(sizeof(char) * letters);
 	if (text == NULL)
 	{
-	close(i);
+	close(file);
 	return (0);
 	}
 	n_read = read(file, text, letters);
