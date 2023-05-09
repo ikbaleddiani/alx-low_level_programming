@@ -13,34 +13,34 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-int file;
+	int fd;
 	ssize_t n_read, n_written;
 	char *text;
 
 	if (filename == NULL)
 		return (0);
 
-	file = open(filename, O_RDONLY);
-	if (file  == -1)
+	fd = open(filename, O_RDONLY);
+	if (fd  == -1)
 		return (0);
 
 	text = malloc(sizeof(char) * letters);
 	if (text == NULL)
 	{
-	close(file);
+	close(fd);
 	return (0);
 	}
-	n_read = read(file, text, letters);
+	n_read = read(fd, text, letters);
 	if (n_read == -1)
 	{
 	free(text);
-	close(file);
+	close(fd);
 	return (0);
 	}
 
 	n_written = write(STDOUT_FILENO, text, n_read);
 	free(text);
-	close(file);
+	close(fd);
 
 	if (n_written != n_read)
 	return (0);
