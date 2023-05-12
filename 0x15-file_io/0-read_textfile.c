@@ -2,7 +2,6 @@
 
 /**
  * read_textfile - a function that reads a text file and prints it
- * to the POSIX standard output.
  * @filename: name of file
  * @letters: num of bytes
  *
@@ -11,7 +10,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t fd, len, x;
+	ssize_t fd, r, x;
 	char *text;
 
 	text = malloc(letters);
@@ -28,9 +27,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	len = read(fd, text, letters);
-	x = write(STDOUT_FILENO, text, len);
-	close(file);
+	r = read(fd, text, letters);
+	x = write(STDOUT_FILENO, text, r);
+	close(fd);
 
 	return (x);
 }
