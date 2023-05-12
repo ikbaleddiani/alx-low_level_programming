@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -8,15 +6,12 @@
  * @filename: name of file
  * @letters: num of bytes
  *
- * Return: the actual number of letters it could read and print
- * if the file can not be opened or read, return 0
- * if filename is NULL return 0,if write fails or does not write the expected
- *amount of bytes, return 0
+ * Return: return the values
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t fd, len, write;
+	ssize_t fd, len, x;
 	char *text;
 
 	text = malloc(letters);
@@ -34,8 +29,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	len = read(fd, text, letters);
-	write = write(STDOUT_FILENO, text, len);
+	x = write(STDOUT_FILENO, text, len);
 	close(file);
 
-	return (write);
+	return (x);
 }
