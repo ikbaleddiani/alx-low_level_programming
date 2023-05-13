@@ -26,7 +26,7 @@ void error_file(int file_from, int file_to, char *arg[])
 }
 
 /**
- * main - check the code 
+ * main - check the code
  * @arg1: num of arguments.
  * @arg2: arguments
  *
